@@ -1,0 +1,36 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.asklokesh/freshbooks-mcp-server",
+  "description": "MCP server for FreshBooks API integration",
+  "title": "Freshbooks",
+  "repository": {
+    "url": "https://github.com/asklokesh/freshbooks-mcp-server",
+    "source": "github"
+  },
+  "version": "0.1.0",
+  "packages": [
+    {
+      "registryType": "pypi",
+      "registryBaseUrl": "https://pypi.org",
+      "identifier": "freshbooks-mcp-server",
+      "version": "0.1.0",
+      "runtimeHint": "uvx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "FRESHBOOKS_API_KEY",
+          "description": "API Key for FRESHBOOKS",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "FRESHBOOKS_API_URL",
+          "description": "API URL for FRESHBOOKS",
+          "isRequired": false
+        }
+      ]
+    }
+  ]
+}
