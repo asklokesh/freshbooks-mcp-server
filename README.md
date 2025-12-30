@@ -1,5 +1,7 @@
 # FreshBooks MCP Server
 
+<!-- mcp-name: io.github.asklokesh/freshbooks-mcp-server -->
+
 <div align="center">
 
 # Freshbooks Mcp Server
