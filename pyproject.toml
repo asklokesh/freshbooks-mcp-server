@@ -28,3 +28,6 @@ dev = [
 
 [project.scripts]
 freshbooks-mcp = "freshbooks_mcp.server:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/freshbooks_mcp"]
